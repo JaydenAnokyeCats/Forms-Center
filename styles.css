@@ -19,18 +19,30 @@ grid implementation later?
 .header-nav{
     position: sticky;
     top: 0;
+    width: 100%;
     display: flex;
     background-color: rgb(155, 155, 155);
 }
 
+
+
+
+.fc-formpreviews{
+    display: grid;
+    border: 2px solid yellow;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 10px;
+   
+}
+
 .fc-box{
-    width: 30em;
     text-align: center;
-    border: 2px solid;
-    border-radius: 100px;
-    padding: 5px;
+    border: solid;
+    border-width: 0.2em;
+    border-radius: 5px;
+    padding: 10px;
     background-color: rgb(230, 230, 230);
-    border-width: 0.3em;
+    
 }
 
 .content{
