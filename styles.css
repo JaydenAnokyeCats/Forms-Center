@@ -25,12 +25,11 @@ grid implementation later?
 }
 
 
-
-
 .fc-formpreviews{
-    display: grid;
+    display: flex;
     border: 2px solid yellow;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 10px;
    
 }
@@ -42,10 +41,19 @@ grid implementation later?
     border-radius: 5px;
     padding: 10px;
     background-color: rgb(230, 230, 230);
+    min-width: 1rem;
+    max-width: 25rem;
+    width: 100%;
     
 }
 
 .content{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+}
+
+.expander{
+    background: transparent;
+    border-width: 0;
+    padding: 0;
 }
