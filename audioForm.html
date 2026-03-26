@@ -2,18 +2,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Form: Audio</title>
 </head>
-<body>
+<body id="audioB">
     <div class="main">
-        <h1>Title</h1>
+        <div class="formContainer">
+            <h1 id="formTitle">Title</h1>
+            <hr>
+            <div class="formInfo">
 
-        <h2>Name</h2>
 
-        <h2>Song</h2>
-        <h2>Artist</h2>
-        <h2>Yr.</h2>
-        <button>Submit Form</button>
+                <label for="name"><h2>Name</h2></label>
+                <input type="text" class="input" id="name" name="name">
+
+                <label for="sName"><h2>Song</h2></label>
+                <input type="text" class="input" id="sName" name="song">
+
+                <label for="artName"><h2>Artist</h2></label>
+                <input type="text" class="input-L" id="artName" name="artist">
+
+                <label for="year"><h2>Yr.</h2></label>
+                <input type="text" class="input-R" id="year" name="year">
+
+                <button type="submit">Submit Form</button>
+
+
+            </div>
+        </div>
     </div>
 </body>
 </html>
