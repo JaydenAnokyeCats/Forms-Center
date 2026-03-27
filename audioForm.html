@@ -3,29 +3,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;600&display=swap" rel="stylesheet">
     <title>Form: Audio</title>
 </head>
-<body id="audioB">
+<body id="audioB"><!--Used id to have specific styling per form-->
     <div class="main">
-        <div class="formContainer">
-            <h1 id="formTitle">Title</h1>
+        <div class="formContainer"> <!--Container, holds everything in the form-->
+            <h1 id="formTitle" style="background-color: rgb(216, 68, 191);">Audio Submission</h1>
+            <p id="descText">Submit a song or audio to be used in this website: Audio Player 3000</p>
             <hr>
             <div class="formInfo">
 
 
                 <label for="name"><h2>Name</h2></label>
-                <input type="text" class="input" id="name" name="name">
+                <input type="text" class="input" id="name" name="name" placeholder="Enter desired name...">
 
                 <label for="sName"><h2>Song</h2></label>
-                <input type="text" class="input" id="sName" name="song">
+                <input type="text" class="input" id="sName" name="song" placeholder="Enter song name...">
+                
+                <div class="side"> 
+                    <!--This div is here to make the Artist and Year related labels appear side-by-side-->
+                    <label for="artName"><h2>Artist</h2></label>
+                    <label for="year"><h2>Yr.</h2></label>
 
-                <label for="artName"><h2>Artist</h2></label>
-                <input type="text" class="input-L" id="artName" name="artist">
+                    <input type="text" class="input-L" id="artName" name="artist" placeholder="Enter song creator(s)...">
+                    <input type="text" class="input-R" id="year" name="year" placeholder="Enter release date...">
+                </div>
+                
 
-                <label for="year"><h2>Yr.</h2></label>
-                <input type="text" class="input-R" id="year" name="year">
-
-                <button type="submit">Submit Form</button>
+                <button type="submit" style="background-color: rgb(216, 68, 191);">Submit Form</button>
 
 
             </div>
