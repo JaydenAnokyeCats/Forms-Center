@@ -54,6 +54,10 @@ grid implementation later?
     gap: 10px;
 }
 
+.fc-link {
+    display: block;
+}
+
 /* Boxes */
 .fc-box{
     text-align: center;
